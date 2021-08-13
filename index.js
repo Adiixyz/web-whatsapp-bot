@@ -4,7 +4,7 @@ const fs = require('fs');
 const brainly = require('brainly-scraper-v2');
 const request = require('request');
 const { Client, Location } =  require('whatsapp-web.js');
-const SESSION_FILE_PATH = './session.json';
+const SESSION_FILE_PATH = './webwabot.json';
 let sessionCfg;
 if (fs.existsSync(SESSION_FILE_PATH)) {
     sessionCfg = require(SESSION_FILE_PATH);
@@ -47,19 +47,30 @@ client.on('message_create'/*'message'*/, async msg => {
         // Send a new message as a reply to the current one
         msg.reply('pong');
 
-    } else if (msg.body == '!help') {
+    } else if (msg.body == '!menu') {
         msg.reply(`
-!info
-!quoteinfo (harus di tag)
-!groupinfo
-!delete (harus di tag)
-!echo <teks>
-!chats
-!resendmedia (harus di tag yang berisi media)
-!ping reply (ping di tag)
-!ping (ping tanpa di tag)
-!brainly <soal>
-!quotes
+You typed !menu
+┏━━◪ *「 WEB WHATSAPP BOT 」*
+┃
+┣◪ MAIN
+┃┣❒ !menu
+┣◪ INFO
+┃┣❒ !info
+┃┣❒ !quoteinfo <tag a message>
+┃┣❒ !groupinfo
+┣◪ Message
+┃┣❒ !delete <reply a message>
+┃┣❒ !echo <text>
+┃┣❒ !resendmedia <reply a media>
+┃┣❒ !chats
+┣◪ THINGS
+┃┣❒ !quotes
+┃┣❒ !brainly <question>
+┣◪ Other
+┃┣❒ !ping <ping tagged>
+┃┣❒ !ping <untagged>
+
+━━◪ *「 https://github.com/Adiixyz/web-whatsapp-bot 」* ◪━━
 `)
     } else if (msg.body == '!ping') {
         // Send a new message to the same chat
