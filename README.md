@@ -2,8 +2,8 @@
 
 # Hmm
 [File](https://github.com/Adiixyz/web-whatsapp-bot#file)
-[Install](https://github.com/Adiixyz/web-whatsapp-bot#install)
-[Run](https://github.com/Adiixyz/web-whatsapp-bot#run)
+| [Install](https://github.com/Adiixyz/web-whatsapp-bot#install)
+| [Run](https://github.com/Adiixyz/web-whatsapp-bot#run)
 
 # Created using
 [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js/)
