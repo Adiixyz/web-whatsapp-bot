@@ -7,6 +7,8 @@ const fs = require('fs');
 const brainly = require('brainly-scraper-v2');
 const request = require('request');
 const { Client, Location } =  require('whatsapp-web.js');
+const botName = 'Bot Name';
+const ownerName = 'Owner Name'
 const SESSION_FILE_PATH = './webwabot.json';
 let sessionCfg;
 if (fs.existsSync(SESSION_FILE_PATH)) {
@@ -52,9 +54,9 @@ client.on('message_create'/*'message'*/, async msg => {
 
     } else if (msg.body == '!menu') {
         msg.reply(`
-You typed !menu
+Web Whatsapp Bot
 
-┏━━◪ *「 WEB WHATSAPP BOT 」*
+┏━━◪ *「 ${botName} 」*
 ┃
 ┣◪ MAIN
 ┃┣❒ !menu
@@ -79,7 +81,8 @@ You typed !menu
 ┃┣❒ !ping <untagged>
 *└──────────────────────*
 
-━━◪ *「 https://github.com/Adiixyz/web-whatsapp-bot 」* ◪━━
+*「 github.com/Adiixyz/web-whatsapp-bot 」*
+━━◪ 《 Created by ${ownerName} 》◪━━
 `)
     } else if (msg.body == '!ping') {
         // Send a new message to the same chat
