@@ -53,25 +53,31 @@ client.on('message_create'/*'message'*/, async msg => {
     } else if (msg.body == '!menu') {
         msg.reply(`
 You typed !menu
+
 ┏━━◪ *「 WEB WHATSAPP BOT 」*
 ┃
 ┣◪ MAIN
 ┃┣❒ !menu
+┃
 ┣◪ INFO
 ┃┣❒ !info
 ┃┣❒ !quoteinfo <tag a message>
 ┃┣❒ !groupinfo
+┃
 ┣◪ Message
 ┃┣❒ !delete <reply a message>
 ┃┣❒ !echo <text>
 ┃┣❒ !resendmedia <reply a media>
 ┃┣❒ !chats
+┃
 ┣◪ THINGS
 ┃┣❒ !quotes
 ┃┣❒ !brainly <question>
+┃
 ┣◪ Other
 ┃┣❒ !ping <ping tagged>
 ┃┣❒ !ping <untagged>
+*└──────────────────────*
 
 ━━◪ *「 https://github.com/Adiixyz/web-whatsapp-bot 」* ◪━━
 `)
