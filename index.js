@@ -1,4 +1,7 @@
-// Modified from 'whatsapp-web.js/examples.js'
+// hayo
+// makasih dh pake
+// gak subscribe channel gw = error
+// youtube.com/adiination
 
 const fs = require('fs');
 const brainly = require('brainly-scraper-v2');
