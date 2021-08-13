@@ -26,3 +26,7 @@ Follow the steps
 
 # Scan the Code
 ## And you are done!
+
+### Language that i use in this repository
+• `Batchfile`
+• `JavaScript`
