@@ -11,11 +11,18 @@
 [Download](https://github.com/Adiixyz/web-whatsapp-bot/archive/master.zip) 
 Then extract the *ZIP* file to `C:\` folder
 
-# Install package
-Run `install.bat` to install some NPM PACKAGES
+# Install
+Open Run by clicking `Windows + R` and type `cmd`
+```cmd
+Follow the steps
 
-# Run
-Click `start.bat` to start
+> cd C:\web-whatsapp-bot
+> install.bat
+( wait until done )
+```
+
+# RUN
+`> start.bat` or `node webbot.js`
 
 # Scan the Code
 ## And you are done!
